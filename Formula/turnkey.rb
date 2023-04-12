@@ -1,7 +1,7 @@
 class Turnkey < Formula
   desc "Turnkey CLI"
   homepage "https://github.com/tkhq/tkcli"
-  version "v0.3.3"
+  version "v0.3.4"
   license "Apache License 2.0"
 
   if Hardware::CPU.arm?
