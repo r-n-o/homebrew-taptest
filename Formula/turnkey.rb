@@ -9,8 +9,7 @@ class Turnkey < Formula
     sha256 "dab249ca4b1bd70ac92b1e403c68b44b4aafc96b76524be1a4484013566ac182"
 
     def install
-        binfile_with_extension = File.basename(Dir.glob "#{prefix}/bin/turnkey*")
-        bin.install binfile_with_extension => "turnkey"
+      bin.install "turnkey.darwin" => "turnkey"
     end
   end
   if Hardware::CPU.intel?
@@ -18,8 +17,7 @@ class Turnkey < Formula
     sha256 "52ff1db2e8276f5a3adebf72b790dc3907490f317c1886e0b88af30fb958200b"
 
     def install
-        binfile_with_extension = File.basename(Dir.glob "#{prefix}/bin/turnkey*")
-        bin.install binfile_with_extension => "turnkey"
+      bin.install "turnkey.darwin" => "turnkey"
     end
   end
 
